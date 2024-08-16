@@ -8,12 +8,12 @@ A comprehensive guide for configuring the Jetson Nano, including all necessary s
 3- And then boot it.
 
 # 2 - If you have Jetson Nano Developer Kit with emmc storage
-Step 1- For this you required a hot machine which have linux operating system 18.04 or 22.04.
-Step 2- On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager).
-Step 3- Create a account on it.
-Step 4- And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ).
+ 1.- For this you required a hot machine which have linux operating system 18.04 or 22.04.
+ 2.- On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager).
+ 3.- Create a account on it.
+ 4.- And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ).
 
-Step 5- After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step).
+ 5.- After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step).
 
 # 2-i Steps to enable SD card:- 
     1  git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays.git
@@ -92,16 +92,16 @@ Follow this link for installing tensorflow
 
 
 # Installing mediapipe –
-Step 1- Github - https://github.com/anion0278/mediapipe-jetson
-Step 3- First download the wheel file from this link --- https://github.com/anion0278/mediapipe-jetson/tree/master/dist.
+1.- Github - https://github.com/anion0278/mediapipe-jetson
+3.- First download the wheel file from this link --- https://github.com/anion0278/mediapipe-jetson/tree/master/dist.
 And put it in home directory
-Step 4- run following command in terminal
+4.- run following command in terminal
 $ sudo apt update
 $ sudo apt install python3-pip
 $ pip3 install --upgrade pip
-Step 5- Remove previous versions of Mediapipe (if it was installed):
+5.- Remove previous versions of Mediapipe (if it was installed):
 $ pip3 uninstall mediapipe
-Step 6- Install from wheel with (run commands from mediapipe dir):
+6.- Install from wheel with (run commands from mediapipe dir):
 $ pip3 install protobuf==3.19.4 opencv-python==4.5.3.56 dataclasses mediapipe-0.8.9_cuda102-cp36-cp36m-linux_aarch64.whl
 
 Note: Building wheel for newer version of opencv-python may take quite some time (up to few hours)!
@@ -118,10 +118,10 @@ Note: Building wheel for newer version of opencv-python may take quite some time
 
 # if you getting this error in your jetson nano then follow this step
 ‘’’’’’’’’’ if you getting --- OSError: /usr/lib/aarch64-linux-gnu/libgomp.so.1: cannot allocate memory in static TLS block
-first open bashrc file --  gedit  .~/bashrc
-add this line ---- export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1:$LD_PRELOAD ----- and save it 
-final run the bashrc file – source .~/bashrc
-adding this line to the beginning of the code ----- from torch.nn.utils.rnn import pad_sequence  ‘’’’’’’’’’’’
+1. first open bashrc file --  gedit  .~/bashrc
+2. add this line ---- export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1:$LD_PRELOAD ----- and save it 
+3. final run the bashrc file – source .~/bashrc
+4. adding this line to the beginning of the code ----- from torch.nn.utils.rnn import pad_sequence  ‘’’’’’’’’’’’
 
 # If you are planing to use jetson nano with drone project so you can also follow below step (As per your reqired) 
 This step for drone project –
