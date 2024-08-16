@@ -3,17 +3,17 @@ A comprehensive guide for configuring the Jetson Nano, including all necessary s
 
 
 # 1 - If you have Jetson Nano Developer Kit
-1- Download the jetson nano sd card image from this link - (https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#prepare)
-2- Write this image on sdcard
-3- And then boot it.
+1. Download the jetson nano sd card image from this link - (https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#prepare)
+2. Write this image on sdcard.
+3. And then boot it.
 
 # 2 - If you have Jetson Nano Developer Kit with emmc storage
- 1.- For this you required a hot machine which have linux operating system 18.04 or 22.04.
- 2.- On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager).
- 3.- Create a account on it.
- 4.- And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ).
+1. For this you required a hot machine which have linux operating system 18.04 or 22.04.
+2. On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager).
+3. Create a account on it.
+4. And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ).
 
- 5.- After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step).
+5. After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step).
 
 # 2-i Steps to enable SD card:- 
     1  git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays.git
@@ -92,16 +92,16 @@ Follow this link for installing tensorflow
 
 
 # Installing mediapipe –
-1.- Github - https://github.com/anion0278/mediapipe-jetson
-3.- First download the wheel file from this link --- https://github.com/anion0278/mediapipe-jetson/tree/master/dist.
+1. Github - https://github.com/anion0278/mediapipe-jetson
+2. First download the wheel file from this link --- https://github.com/anion0278/mediapipe-jetson/tree/master/dist.
 And put it in home directory
-4.- run following command in terminal
+3. run following command in terminal
 $ sudo apt update
 $ sudo apt install python3-pip
 $ pip3 install --upgrade pip
-5.- Remove previous versions of Mediapipe (if it was installed):
+4. Remove previous versions of Mediapipe (if it was installed):
 $ pip3 uninstall mediapipe
-6.- Install from wheel with (run commands from mediapipe dir):
+5.Install from wheel with (run commands from mediapipe dir):
 $ pip3 install protobuf==3.19.4 opencv-python==4.5.3.56 dataclasses mediapipe-0.8.9_cuda102-cp36-cp36m-linux_aarch64.whl
 
 Note: Building wheel for newer version of opencv-python may take quite some time (up to few hours)!
