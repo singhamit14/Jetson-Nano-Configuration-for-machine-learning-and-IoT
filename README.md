@@ -3,17 +3,17 @@ A comprehensive guide for configuring the Jetson Nano, including all necessary s
 
 
 # 1 - If you have Jetson Nano Developer Kit
-Step 1- Download the jetson nano sd card image from this link - (https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#prepare)
-Step 2- Write this image on sdcard
-Step 3- And then boot it.
+1- Download the jetson nano sd card image from this link - (https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#prepare)
+2- Write this image on sdcard
+3- And then boot it.
 
 # 2 - If you have Jetson Nano Developer Kit with emmc storage
-Step 1- For this you required a hot machine which have linux operating system 18.02 or 22.04
-Step 2- On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager)
+Step 1- For this you required a hot machine which have linux operating system 18.04 or 22.04.
+Step 2- On host machine first install the nvidia SDK manager through this link - (https://developer.nvidia.com/sdk-manager).
 Step 3- Create a account on it.
-Step 4- And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ)
+Step 4- And follow this tutorial for batter understanding- 1- (https://youtu.be/D0v1q-HUM4o?si=YucGI65XZt24ui1K)  2- (https://youtu.be/XTjh8Km7coM?si=yXckPHxrs73oL8VZ).
 
-Step 5- After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step)
+Step 5- After following above tutorial, open new terminal in jetson nano (And here we enable sd card option in jetson nano because in this we have install so many library for that we required more space but in emmc board they have only 16 or 32 gb storage for that we need to boot our jetson nano from sd card for that follow below step).
 
 # 2-i Steps to enable SD card:- 
     1  git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays.git
