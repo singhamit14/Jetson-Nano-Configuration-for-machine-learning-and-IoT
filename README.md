@@ -27,8 +27,10 @@ A comprehensive guide for configuring the Jetson Nano, including all necessary s
     9  sudo reboot
 
 # 2-ii Check sdcard showing or not-
-1.	sudo jetson_clocks
-2.	gnome-disks
+```bash
+$ sudo jetson_clocks
+$ gnome-disks
+```
 
 # 2-iii Steps to get SD card bootable:-(new terminal)
     1  df -h  (check that memory of 64 gb is showing)
@@ -63,19 +65,23 @@ Example: In place of mmcblk0p1 write mmcblk1p1.
 
 # Installing pytorch and torchvision –
 Pytorch
-1.	wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl
-2.	sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
-3.	pip3 install ‘Cython<3’
-4.	pip3 install numpy torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+```bash
+$ wget https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl -O torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+$ sudo apt-get install python3-pip libopenblas-base libopenmpi-dev libomp-dev
+$ pip3 install ‘Cython<3’
+$ pip3 install numpy torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+```
    
 torchvision
-1.	sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
-2.	sudo git clone --branch v0.9.0 https://github.com/pytorch/vision torchvision  
-3.	cd torchvision
-4.	export BUILD_VERSION=0.9.0  
-5.	sudo python3 setup.py install --user
-6.	cd ../  
-7.	pip install 'pillow<7' 
+```bash
+$ sudo apt-get install libjpeg-dev zlib1g-dev libpython3-dev libopenblas-dev libavcodec-dev libavformat-dev libswscale-dev
+$ sudo git clone --branch v0.9.0 https://github.com/pytorch/vision torchvision  
+$ cd torchvision
+$ export BUILD_VERSION=0.9.0  
+$ sudo python3 setup.py install --user
+$ cd ../  
+$ pip install 'pillow<7'
+```
 
 # Installing Tensorflow –
 Follow this link for installing tensorflow
